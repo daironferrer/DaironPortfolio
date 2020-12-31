@@ -8,60 +8,82 @@
     <!-- Bootstrap Link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css"
-   
-    <title></title>
+    
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.5/dist/css/uikit.min.css" />
+    
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.5/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.5/dist/js/uikit-icons.min.js"></script>
 
   </head>
 
+  <title>Home</title>
 
-  <body>
+  <body> 
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Dairon Ferrer's Portfolio</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active" href="index.html">About Me<span class="sr-only">(current)</span></a>
-          <a class="nav-link" href="portfolio.html">Portfolio</a>
-          <a class="nav-link" href="contact.html">Contact</a>
-         
-          
-        </div>
-      </div>
-    </nav>
-    </div>
-
-    <div class="text-center my-3">
-      <h1>About Me</h1>
-    </div>
-
-<div class="container">
-    <div class="row">
-      <div class="col-md-3">
-        <img src="IMG_1930.jpeg" alt="Self Portrait" class="img-thumbnail">
-      </div>
-      <div class="col-md-9">
-        <p>
-          My name is Dairon Ferrer. I am twenty-years-old and I am currently attending UNC Chapel Hill’s Coding Bootcamp, which upon completion will introduce me into the software development work field. I have always had a passion for technology and its advancements, so I am hoping to turn my interests into my life-long career. Once graduated from UNC I will be certified as a full-stack developer and will possess the skills needed to succeed in this field.
-
-        </p>
-        <p>
-          I currently work in the shipping department at Ashley Furniture while I am in school, but my desire to succeed and have multiple skills have pushed me to work different jobs prior to this one. I am a freelancing medical interpreter, where I use my proficiency in both English and Spanish to communicate with patients and doctors during visits to the clinic. I have also displayed my interpersonal skills by working as a Sales Associate at Sherwin-Williams, where I interacted with business clients and wholesale customers. My performances at any workplace have always been far above what is expected, and my mentality remains the same with the new skills I will acquire in order to enter this new work field.
-
-        </p>
-      </div>
-    </div>
-  </div>
-</div>  
-
-<div>
-
-
+    <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+      <div class="uk-navbar-left">
   
+          <ul class="uk-navbar-nav">
+              <li class="uk-active"><a href="index.html"  id='navText'>Home</a></li>
+              <li><a href="portfolio.html" id='navText'>Portfolio</a></li>
+              <li><a href="contact.html" id='navText'>Contact Me</a></li>
+          </ul>
+  
+      </div>
+  </nav>
+
+<div class="text-center uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="https://i.imgur.com/c3wSsvq.jpg" uk-img>
+<h1 class="text-center uk-text-bold">About Me</h1>
 </div>
 
+
+<div class="uk-section uk-section-default" id="containers">
+  <div class="uk-container">
+
+    <div class="uk-grid-match uk-child-width-1-2@m" uk-grid>
+
+      <div>
+      <img id='image1' class="uk-align-left" data-src="images/image1.jpeg" width="200" height="200" alt="photo1" uk-img>
+      </div>
+
+        <div class="aboutMe">
+        <p>My name is Dairon Ferrer. I am twenty years old and I am currently attending UNC Chapel Hill’s Coding Bootcamp, which upon completion will introduce me into the software development work field. I have always had a passion for technology and its advancements, so I am hoping to turn my interests into my life-long career. Once graduated from UNC I will be certified as a full-stack developer and will possess the skills needed to succeed in this field. I currently work in the shipping department at Ashley Furniture while I am in school, but my desire to succeed and have multiple skills has pushed me to work different jobs prior to this one. I am a freelancing medical interpreter, where I use my proficiency in both English and Spanish to communicate with patients and doctors during visits to the clinic. I have also displayed my interpersonal skills by working as a Sales Associate at Sherwin-Williams, where I interacted with business clients and wholesale customers. My performances at any workplace have always been above what is expected, and my mentality remains the same with the new skills I will acquire in order to enter this new work field.</p>
+        </div>
+
+    </div>
+
+  </div>
+</div>
+
+
+<div class="uk-section uk-section-default" id="containers">
+  <div class="uk-container">
+
+      <div class="uk-grid-match uk-child-width-1-2@m" uk-grid>
+          
+        <div>
+           
+          <a href class="uk-display-block uk-card uk-card-body uk-card-secondary uk-link-toggle uk-width-medium" id="linkCards">
+              <h3 class="uk-card-title"><span class="uk-link-heading">GitHub</span></h3>
+          </a>
+
+          </div>
+          
+          <div>
+            
+            <a href class="uk-display-block uk-card uk-card-body uk-card-secondary uk-link-toggle uk-width-medium" id="linkCards">
+              <h3 class="uk-card-title"><span class="uk-link-heading">LinkedIn</span></h3>
+          </a>
+
+          </div>
+      </div>
+
+  </div>
+</div>
+
+  </body>
 
      
 
